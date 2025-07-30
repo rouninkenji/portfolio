@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: white;
+    color: #24201e;
+}
+
+.main {
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+}
+
+.navbar {
+    width: 86%;
+    margin: auto;
+    padding: 15px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 10;
+}
+
+.logo {
+    width: 150px;
+    cursor: pointer;
+}
+
+.navbar ul {
+    list-style: none;
+}
+
+.navbar ul li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    font-weight: bold;
+    color: gray;
+    font-size: 16px;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navbar ul li a:hover,
+.navbar ul li a.active {
+    background-color: #fff;
+    color: #5c8e45;
+}
+
+
+.info {
+    margin-left: 7%;
+    margin-top: 6%;
+    max-width: 600px;
+}
+
+.info h2 {
+    font-size: 65px;
+    color: #24201e;
+    margin-bottom: 10px;
+}
+
+.info h3 {
+    font-size: 18px;
+    letter-spacing: 1px;
+    line-height: 1.4;
+    margin-bottom: 20px;
+}
+
+.info span {
+    color: rgb(36, 128, 0);
+}
+
+.info a {
+    display: inline-block;
+    background-color: #24201e;
+    color: #fff;
+    padding: 10px 18px;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.info a:hover {
+    background-color: purple;
+}
+
+
+.image {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 100px;
+    z-index: 1;
+}
+
+.image img {
+    width: 550px;
+    height: 550px;
+    border-radius: 50%;
+    border: 10px solid white;
+    transform: translateY(100px);
+    object-fit: cover;
+}
+
+
+.icons {
+    margin-left: 7%;
+    margin-top: 20px;
+}
+
+.icons a {
+    margin-right: 20px;
+    font-size: 40px;
+    color: black;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.icons .fb:hover {
+    color: rgb(24, 119, 242);
+}
+
+.icons .ig:hover {
+    color: rgb(131, 58, 180);
+}
+
+.icons .tt:hover {
+    color: black;
+}
